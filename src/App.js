@@ -7,12 +7,11 @@ import Banner from "./Banner";
 function App() {
   return (
     <div className="app">
-      {/* Nav */}
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow
+        isLargeRow={true}
       />
       <Row title="TRENDING NOW" fetchUrl={requests.fetchTrending} />
       <Row title="TOP RATED" fetchUrl={requests.fetchTopRated} />
